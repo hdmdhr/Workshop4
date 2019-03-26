@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             System.Windows.Forms.Label pkgDescLabel;
             System.Windows.Forms.Label pkgEndDateLabel;
             System.Windows.Forms.Label pkgBasePriceLabel;
@@ -37,38 +36,51 @@
             System.Windows.Forms.Label pkgAgencyCommissionLabel;
             System.Windows.Forms.Label pkgNameLabel;
             System.Windows.Forms.Label packageIdLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.travelExpertsDataSet = new Workshop4.TravelExpertsDataSet();
-            this.packagesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.packagesTableAdapter = new Workshop4.TravelExpertsDataSetTableAdapters.PackagesTableAdapter();
-            this.tableAdapterManager = new Workshop4.TravelExpertsDataSetTableAdapters.TableAdapterManager();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pkgAgencyCommissionTextBox = new System.Windows.Forms.TextBox();
+            this.packagesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.travelExpertsDataSet = new Workshop4.TravelExpertsDataSet();
+            this.pkgNameTextBox = new System.Windows.Forms.TextBox();
+            this.pkgBasePriceTextBox = new System.Windows.Forms.TextBox();
+            this.pkgStartDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.pkgDescTextBox = new System.Windows.Forms.TextBox();
+            this.pkgEndDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.packageIdTextBox = new System.Windows.Forms.TextBox();
+            this.packagesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.packagesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.packagesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.packageIdTextBox = new System.Windows.Forms.TextBox();
-            this.pkgEndDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.pkgDescTextBox = new System.Windows.Forms.TextBox();
-            this.pkgStartDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.pkgBasePriceTextBox = new System.Windows.Forms.TextBox();
-            this.pkgNameTextBox = new System.Windows.Forms.TextBox();
-            this.pkgAgencyCommissionTextBox = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.packagesTableAdapter = new Workshop4.TravelExpertsDataSetTableAdapters.PackagesTableAdapter();
+            this.tableAdapterManager = new Workshop4.TravelExpertsDataSetTableAdapters.TableAdapterManager();
+            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productsTableAdapter = new Workshop4.TravelExpertsDataSetTableAdapters.ProductsTableAdapter();
+            this.productsDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem1 = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem1 = new System.Windows.Forms.ToolStripButton();
             pkgDescLabel = new System.Windows.Forms.Label();
             pkgEndDateLabel = new System.Windows.Forms.Label();
             pkgBasePriceLabel = new System.Windows.Forms.Label();
@@ -81,13 +93,88 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.travelExpertsDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.packagesBindingSource)).BeginInit();
             this.tabPage1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.packagesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.travelExpertsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.packagesBindingNavigator)).BeginInit();
             this.packagesBindingNavigator.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsBindingNavigator)).BeginInit();
+            this.productsBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pkgDescLabel
+            // 
+            pkgDescLabel.AutoSize = true;
+            pkgDescLabel.Dock = System.Windows.Forms.DockStyle.Right;
+            pkgDescLabel.Location = new System.Drawing.Point(117, 240);
+            pkgDescLabel.Name = "pkgDescLabel";
+            pkgDescLabel.Size = new System.Drawing.Size(82, 60);
+            pkgDescLabel.TabIndex = 8;
+            pkgDescLabel.Text = "Pkg Desc:";
+            // 
+            // pkgEndDateLabel
+            // 
+            pkgEndDateLabel.AutoSize = true;
+            pkgEndDateLabel.Dock = System.Windows.Forms.DockStyle.Right;
+            pkgEndDateLabel.Location = new System.Drawing.Point(85, 180);
+            pkgEndDateLabel.Name = "pkgEndDateLabel";
+            pkgEndDateLabel.Size = new System.Drawing.Size(114, 60);
+            pkgEndDateLabel.TabIndex = 6;
+            pkgEndDateLabel.Text = "Pkg End Date:";
+            // 
+            // pkgBasePriceLabel
+            // 
+            pkgBasePriceLabel.AutoSize = true;
+            pkgBasePriceLabel.Dock = System.Windows.Forms.DockStyle.Right;
+            pkgBasePriceLabel.Location = new System.Drawing.Point(78, 300);
+            pkgBasePriceLabel.Name = "pkgBasePriceLabel";
+            pkgBasePriceLabel.Size = new System.Drawing.Size(121, 60);
+            pkgBasePriceLabel.TabIndex = 10;
+            pkgBasePriceLabel.Text = "Pkg Base Price:";
+            // 
+            // pkgStartDateLabel
+            // 
+            pkgStartDateLabel.AutoSize = true;
+            pkgStartDateLabel.Dock = System.Windows.Forms.DockStyle.Right;
+            pkgStartDateLabel.Location = new System.Drawing.Point(79, 120);
+            pkgStartDateLabel.Name = "pkgStartDateLabel";
+            pkgStartDateLabel.Size = new System.Drawing.Size(120, 60);
+            pkgStartDateLabel.TabIndex = 4;
+            pkgStartDateLabel.Text = "Pkg Start Date:";
+            // 
+            // pkgAgencyCommissionLabel
+            // 
+            pkgAgencyCommissionLabel.AutoSize = true;
+            pkgAgencyCommissionLabel.Dock = System.Windows.Forms.DockStyle.Right;
+            pkgAgencyCommissionLabel.Location = new System.Drawing.Point(3, 360);
+            pkgAgencyCommissionLabel.Name = "pkgAgencyCommissionLabel";
+            pkgAgencyCommissionLabel.Size = new System.Drawing.Size(196, 62);
+            pkgAgencyCommissionLabel.TabIndex = 12;
+            pkgAgencyCommissionLabel.Text = "Pkg Agency Commission:";
+            // 
+            // pkgNameLabel
+            // 
+            pkgNameLabel.AutoSize = true;
+            pkgNameLabel.Dock = System.Windows.Forms.DockStyle.Right;
+            pkgNameLabel.Location = new System.Drawing.Point(109, 60);
+            pkgNameLabel.Name = "pkgNameLabel";
+            pkgNameLabel.Size = new System.Drawing.Size(90, 60);
+            pkgNameLabel.TabIndex = 2;
+            pkgNameLabel.Text = "Pkg Name:";
+            // 
+            // packageIdLabel
+            // 
+            packageIdLabel.AutoSize = true;
+            packageIdLabel.Dock = System.Windows.Forms.DockStyle.Right;
+            packageIdLabel.Location = new System.Drawing.Point(104, 0);
+            packageIdLabel.Name = "packageIdLabel";
+            packageIdLabel.Size = new System.Drawing.Size(95, 60);
+            packageIdLabel.TabIndex = 0;
+            packageIdLabel.Text = "Package Id:";
             // 
             // splitContainer1
             // 
@@ -145,50 +232,6 @@
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(577, 453);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Products";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(577, 453);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Suppliers";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // travelExpertsDataSet
-            // 
-            this.travelExpertsDataSet.DataSetName = "TravelExpertsDataSet";
-            this.travelExpertsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // packagesBindingSource
-            // 
-            this.packagesBindingSource.DataMember = "Packages";
-            this.packagesBindingSource.DataSource = this.travelExpertsDataSet;
-            // 
-            // packagesTableAdapter
-            // 
-            this.packagesTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Packages_Products_SuppliersTableAdapter = null;
-            this.tableAdapterManager.PackagesTableAdapter = this.packagesTableAdapter;
-            this.tableAdapterManager.Products_SuppliersTableAdapter = null;
-            this.tableAdapterManager.ProductsTableAdapter = null;
-            this.tableAdapterManager.SuppliersTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Workshop4.TravelExpertsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
@@ -201,270 +244,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Packages";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // packagesBindingNavigatorSaveItem
-            // 
-            this.packagesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.packagesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("packagesBindingNavigatorSaveItem.Image")));
-            this.packagesBindingNavigatorSaveItem.Name = "packagesBindingNavigatorSaveItem";
-            this.packagesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.packagesBindingNavigatorSaveItem.Text = "Save Data";
-            // 
-            // packagesBindingNavigator
-            // 
-            this.packagesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.packagesBindingNavigator.BindingSource = this.packagesBindingSource;
-            this.packagesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.packagesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.packagesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.packagesBindingNavigatorSaveItem});
-            this.packagesBindingNavigator.Location = new System.Drawing.Point(3, 3);
-            this.packagesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.packagesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.packagesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.packagesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.packagesBindingNavigator.Name = "packagesBindingNavigator";
-            this.packagesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.packagesBindingNavigator.Size = new System.Drawing.Size(571, 25);
-            this.packagesBindingNavigator.TabIndex = 14;
-            this.packagesBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // packageIdTextBox
-            // 
-            this.packageIdTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.packageIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packagesBindingSource, "PackageId", true));
-            this.packageIdTextBox.Location = new System.Drawing.Point(270, 3);
-            this.packageIdTextBox.Name = "packageIdTextBox";
-            this.packageIdTextBox.Size = new System.Drawing.Size(200, 28);
-            this.packageIdTextBox.TabIndex = 1;
-            // 
-            // pkgDescLabel
-            // 
-            pkgDescLabel.AutoSize = true;
-            pkgDescLabel.Dock = System.Windows.Forms.DockStyle.Right;
-            pkgDescLabel.Location = new System.Drawing.Point(117, 240);
-            pkgDescLabel.Name = "pkgDescLabel";
-            pkgDescLabel.Size = new System.Drawing.Size(82, 60);
-            pkgDescLabel.TabIndex = 8;
-            pkgDescLabel.Text = "Pkg Desc:";
-            // 
-            // pkgEndDateDateTimePicker
-            // 
-            this.pkgEndDateDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pkgEndDateDateTimePicker.CalendarForeColor = System.Drawing.Color.Maroon;
-            this.pkgEndDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.packagesBindingSource, "PkgEndDate", true));
-            this.pkgEndDateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.pkgEndDateDateTimePicker.Location = new System.Drawing.Point(270, 183);
-            this.pkgEndDateDateTimePicker.Name = "pkgEndDateDateTimePicker";
-            this.pkgEndDateDateTimePicker.Size = new System.Drawing.Size(200, 28);
-            this.pkgEndDateDateTimePicker.TabIndex = 7;
-            // 
-            // pkgDescTextBox
-            // 
-            this.pkgDescTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pkgDescTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packagesBindingSource, "PkgDesc", true));
-            this.pkgDescTextBox.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkgDescTextBox.Location = new System.Drawing.Point(270, 243);
-            this.pkgDescTextBox.MaximumSize = new System.Drawing.Size(200, 80);
-            this.pkgDescTextBox.MinimumSize = new System.Drawing.Size(0, 40);
-            this.pkgDescTextBox.Multiline = true;
-            this.pkgDescTextBox.Name = "pkgDescTextBox";
-            this.pkgDescTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.pkgDescTextBox.Size = new System.Drawing.Size(200, 45);
-            this.pkgDescTextBox.TabIndex = 9;
-            // 
-            // pkgEndDateLabel
-            // 
-            pkgEndDateLabel.AutoSize = true;
-            pkgEndDateLabel.Dock = System.Windows.Forms.DockStyle.Right;
-            pkgEndDateLabel.Location = new System.Drawing.Point(85, 180);
-            pkgEndDateLabel.Name = "pkgEndDateLabel";
-            pkgEndDateLabel.Size = new System.Drawing.Size(114, 60);
-            pkgEndDateLabel.TabIndex = 6;
-            pkgEndDateLabel.Text = "Pkg End Date:";
-            // 
-            // pkgBasePriceLabel
-            // 
-            pkgBasePriceLabel.AutoSize = true;
-            pkgBasePriceLabel.Dock = System.Windows.Forms.DockStyle.Right;
-            pkgBasePriceLabel.Location = new System.Drawing.Point(78, 300);
-            pkgBasePriceLabel.Name = "pkgBasePriceLabel";
-            pkgBasePriceLabel.Size = new System.Drawing.Size(121, 60);
-            pkgBasePriceLabel.TabIndex = 10;
-            pkgBasePriceLabel.Text = "Pkg Base Price:";
-            // 
-            // pkgStartDateDateTimePicker
-            // 
-            this.pkgStartDateDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pkgStartDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.packagesBindingSource, "PkgStartDate", true));
-            this.pkgStartDateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.pkgStartDateDateTimePicker.Location = new System.Drawing.Point(270, 123);
-            this.pkgStartDateDateTimePicker.Name = "pkgStartDateDateTimePicker";
-            this.pkgStartDateDateTimePicker.Size = new System.Drawing.Size(200, 28);
-            this.pkgStartDateDateTimePicker.TabIndex = 5;
-            // 
-            // pkgBasePriceTextBox
-            // 
-            this.pkgBasePriceTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pkgBasePriceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packagesBindingSource, "PkgBasePrice", true));
-            this.pkgBasePriceTextBox.Location = new System.Drawing.Point(270, 303);
-            this.pkgBasePriceTextBox.Name = "pkgBasePriceTextBox";
-            this.pkgBasePriceTextBox.Size = new System.Drawing.Size(200, 28);
-            this.pkgBasePriceTextBox.TabIndex = 11;
-            // 
-            // pkgStartDateLabel
-            // 
-            pkgStartDateLabel.AutoSize = true;
-            pkgStartDateLabel.Dock = System.Windows.Forms.DockStyle.Right;
-            pkgStartDateLabel.Location = new System.Drawing.Point(79, 120);
-            pkgStartDateLabel.Name = "pkgStartDateLabel";
-            pkgStartDateLabel.Size = new System.Drawing.Size(120, 60);
-            pkgStartDateLabel.TabIndex = 4;
-            pkgStartDateLabel.Text = "Pkg Start Date:";
-            // 
-            // pkgAgencyCommissionLabel
-            // 
-            pkgAgencyCommissionLabel.AutoSize = true;
-            pkgAgencyCommissionLabel.Dock = System.Windows.Forms.DockStyle.Right;
-            pkgAgencyCommissionLabel.Location = new System.Drawing.Point(3, 360);
-            pkgAgencyCommissionLabel.Name = "pkgAgencyCommissionLabel";
-            pkgAgencyCommissionLabel.Size = new System.Drawing.Size(196, 62);
-            pkgAgencyCommissionLabel.TabIndex = 12;
-            pkgAgencyCommissionLabel.Text = "Pkg Agency Commission:";
-            // 
-            // pkgNameTextBox
-            // 
-            this.pkgNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pkgNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packagesBindingSource, "PkgName", true));
-            this.pkgNameTextBox.Location = new System.Drawing.Point(270, 63);
-            this.pkgNameTextBox.Name = "pkgNameTextBox";
-            this.pkgNameTextBox.Size = new System.Drawing.Size(200, 28);
-            this.pkgNameTextBox.TabIndex = 3;
-            // 
-            // pkgAgencyCommissionTextBox
-            // 
-            this.pkgAgencyCommissionTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pkgAgencyCommissionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packagesBindingSource, "PkgAgencyCommission", true));
-            this.pkgAgencyCommissionTextBox.Location = new System.Drawing.Point(270, 363);
-            this.pkgAgencyCommissionTextBox.Name = "pkgAgencyCommissionTextBox";
-            this.pkgAgencyCommissionTextBox.Size = new System.Drawing.Size(200, 28);
-            this.pkgAgencyCommissionTextBox.TabIndex = 13;
-            // 
-            // pkgNameLabel
-            // 
-            pkgNameLabel.AutoSize = true;
-            pkgNameLabel.Dock = System.Windows.Forms.DockStyle.Right;
-            pkgNameLabel.Location = new System.Drawing.Point(109, 60);
-            pkgNameLabel.Name = "pkgNameLabel";
-            pkgNameLabel.Size = new System.Drawing.Size(90, 60);
-            pkgNameLabel.TabIndex = 2;
-            pkgNameLabel.Text = "Pkg Name:";
-            // 
-            // packageIdLabel
-            // 
-            packageIdLabel.AutoSize = true;
-            packageIdLabel.Dock = System.Windows.Forms.DockStyle.Right;
-            packageIdLabel.Location = new System.Drawing.Point(104, 0);
-            packageIdLabel.Name = "packageIdLabel";
-            packageIdLabel.Size = new System.Drawing.Size(95, 60);
-            packageIdLabel.TabIndex = 0;
-            packageIdLabel.Text = "Package Id:";
             // 
             // tableLayoutPanel1
             // 
@@ -499,6 +278,232 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(538, 422);
             this.tableLayoutPanel1.TabIndex = 15;
             // 
+            // pkgAgencyCommissionTextBox
+            // 
+            this.pkgAgencyCommissionTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pkgAgencyCommissionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packagesBindingSource, "PkgAgencyCommission", true));
+            this.pkgAgencyCommissionTextBox.Location = new System.Drawing.Point(270, 363);
+            this.pkgAgencyCommissionTextBox.Name = "pkgAgencyCommissionTextBox";
+            this.pkgAgencyCommissionTextBox.Size = new System.Drawing.Size(200, 28);
+            this.pkgAgencyCommissionTextBox.TabIndex = 13;
+            // 
+            // packagesBindingSource
+            // 
+            this.packagesBindingSource.DataMember = "Packages";
+            this.packagesBindingSource.DataSource = this.travelExpertsDataSet;
+            // 
+            // travelExpertsDataSet
+            // 
+            this.travelExpertsDataSet.DataSetName = "TravelExpertsDataSet";
+            this.travelExpertsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pkgNameTextBox
+            // 
+            this.pkgNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pkgNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packagesBindingSource, "PkgName", true));
+            this.pkgNameTextBox.Location = new System.Drawing.Point(270, 63);
+            this.pkgNameTextBox.Name = "pkgNameTextBox";
+            this.pkgNameTextBox.Size = new System.Drawing.Size(200, 28);
+            this.pkgNameTextBox.TabIndex = 3;
+            // 
+            // pkgBasePriceTextBox
+            // 
+            this.pkgBasePriceTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pkgBasePriceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packagesBindingSource, "PkgBasePrice", true));
+            this.pkgBasePriceTextBox.Location = new System.Drawing.Point(270, 303);
+            this.pkgBasePriceTextBox.Name = "pkgBasePriceTextBox";
+            this.pkgBasePriceTextBox.Size = new System.Drawing.Size(200, 28);
+            this.pkgBasePriceTextBox.TabIndex = 11;
+            // 
+            // pkgStartDateDateTimePicker
+            // 
+            this.pkgStartDateDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pkgStartDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.packagesBindingSource, "PkgStartDate", true));
+            this.pkgStartDateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.pkgStartDateDateTimePicker.Location = new System.Drawing.Point(270, 123);
+            this.pkgStartDateDateTimePicker.Name = "pkgStartDateDateTimePicker";
+            this.pkgStartDateDateTimePicker.Size = new System.Drawing.Size(200, 28);
+            this.pkgStartDateDateTimePicker.TabIndex = 5;
+            // 
+            // pkgDescTextBox
+            // 
+            this.pkgDescTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pkgDescTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packagesBindingSource, "PkgDesc", true));
+            this.pkgDescTextBox.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pkgDescTextBox.Location = new System.Drawing.Point(270, 243);
+            this.pkgDescTextBox.MaximumSize = new System.Drawing.Size(200, 80);
+            this.pkgDescTextBox.MinimumSize = new System.Drawing.Size(4, 40);
+            this.pkgDescTextBox.Multiline = true;
+            this.pkgDescTextBox.Name = "pkgDescTextBox";
+            this.pkgDescTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.pkgDescTextBox.Size = new System.Drawing.Size(200, 45);
+            this.pkgDescTextBox.TabIndex = 9;
+            // 
+            // pkgEndDateDateTimePicker
+            // 
+            this.pkgEndDateDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pkgEndDateDateTimePicker.CalendarForeColor = System.Drawing.Color.Maroon;
+            this.pkgEndDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.packagesBindingSource, "PkgEndDate", true));
+            this.pkgEndDateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.pkgEndDateDateTimePicker.Location = new System.Drawing.Point(270, 183);
+            this.pkgEndDateDateTimePicker.Name = "pkgEndDateDateTimePicker";
+            this.pkgEndDateDateTimePicker.Size = new System.Drawing.Size(200, 28);
+            this.pkgEndDateDateTimePicker.TabIndex = 7;
+            // 
+            // packageIdTextBox
+            // 
+            this.packageIdTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.packageIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packagesBindingSource, "PackageId", true));
+            this.packageIdTextBox.Location = new System.Drawing.Point(270, 3);
+            this.packageIdTextBox.Name = "packageIdTextBox";
+            this.packageIdTextBox.Size = new System.Drawing.Size(200, 28);
+            this.packageIdTextBox.TabIndex = 1;
+            // 
+            // packagesBindingNavigator
+            // 
+            this.packagesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.packagesBindingNavigator.BindingSource = this.packagesBindingSource;
+            this.packagesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.packagesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.packagesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.packagesBindingNavigatorSaveItem});
+            this.packagesBindingNavigator.Location = new System.Drawing.Point(3, 3);
+            this.packagesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.packagesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.packagesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.packagesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.packagesBindingNavigator.Name = "packagesBindingNavigator";
+            this.packagesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.packagesBindingNavigator.Size = new System.Drawing.Size(571, 25);
+            this.packagesBindingNavigator.TabIndex = 14;
+            this.packagesBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // packagesBindingNavigatorSaveItem
+            // 
+            this.packagesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.packagesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("packagesBindingNavigatorSaveItem.Image")));
+            this.packagesBindingNavigatorSaveItem.Name = "packagesBindingNavigatorSaveItem";
+            this.packagesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.packagesBindingNavigatorSaveItem.Text = "Save Data";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.productsBindingNavigator);
+            this.tabPage2.Controls.Add(this.productsDataGridView);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(577, 453);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Products";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(577, 453);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Suppliers";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // tabPage4
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
@@ -508,6 +513,125 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // packagesTableAdapter
+            // 
+            this.packagesTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Packages_Products_SuppliersTableAdapter = null;
+            this.tableAdapterManager.PackagesTableAdapter = this.packagesTableAdapter;
+            this.tableAdapterManager.Products_SuppliersTableAdapter = null;
+            this.tableAdapterManager.ProductsTableAdapter = null;
+            this.tableAdapterManager.SuppliersTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Workshop4.TravelExpertsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // productsBindingSource
+            // 
+            this.productsBindingSource.DataMember = "Products";
+            this.productsBindingSource.DataSource = this.travelExpertsDataSet;
+            // 
+            // productsTableAdapter
+            // 
+            this.productsTableAdapter.ClearBeforeFill = true;
+            // 
+            // productsDataGridView
+            // 
+            this.productsDataGridView.AutoGenerateColumns = false;
+            this.productsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.productsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.productsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.productsDataGridView.DataSource = this.productsBindingSource;
+            this.productsDataGridView.Dock = System.Windows.Forms.DockStyle.Left;
+            this.productsDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.productsDataGridView.Name = "productsDataGridView";
+            this.productsDataGridView.Size = new System.Drawing.Size(406, 447);
+            this.productsDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ProductId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ProductId";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "ProdName";
+            this.dataGridViewTextBoxColumn2.HeaderText = "ProdName";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // productsBindingNavigator
+            // 
+            this.productsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem1;
+            this.productsBindingNavigator.BindingSource = this.productsBindingSource;
+            this.productsBindingNavigator.CountItem = this.bindingNavigatorCountItem1;
+            this.productsBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem1;
+            this.productsBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorSeparator3,
+            this.bindingNavigatorPositionItem1,
+            this.bindingNavigatorCountItem1,
+            this.bindingNavigatorSeparator4,
+            this.bindingNavigatorAddNewItem1,
+            this.bindingNavigatorDeleteItem1});
+            this.productsBindingNavigator.Location = new System.Drawing.Point(409, 3);
+            this.productsBindingNavigator.MoveFirstItem = null;
+            this.productsBindingNavigator.MoveLastItem = null;
+            this.productsBindingNavigator.MoveNextItem = null;
+            this.productsBindingNavigator.MovePreviousItem = null;
+            this.productsBindingNavigator.Name = "productsBindingNavigator";
+            this.productsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem1;
+            this.productsBindingNavigator.Size = new System.Drawing.Size(165, 25);
+            this.productsBindingNavigator.TabIndex = 1;
+            this.productsBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorSeparator3
+            // 
+            this.bindingNavigatorSeparator3.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem1
+            // 
+            this.bindingNavigatorPositionItem1.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem1.AutoSize = false;
+            this.bindingNavigatorPositionItem1.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem1.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem1.Text = "0";
+            this.bindingNavigatorPositionItem1.ToolTipText = "Current position";
+            // 
+            // bindingNavigatorCountItem1
+            // 
+            this.bindingNavigatorCountItem1.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem1.Text = "of {0}";
+            this.bindingNavigatorCountItem1.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorSeparator4
+            // 
+            this.bindingNavigatorSeparator4.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorAddNewItem1
+            // 
+            this.bindingNavigatorAddNewItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem1.Image")));
+            this.bindingNavigatorAddNewItem1.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem1.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorAddNewItem1.Text = "Add new";
+            // 
+            // bindingNavigatorDeleteItem1
+            // 
+            this.bindingNavigatorDeleteItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem1.Image")));
+            this.bindingNavigatorDeleteItem1.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem1.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorDeleteItem1.Text = "Delete";
             // 
             // frmMain
             // 
@@ -525,15 +649,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.travelExpertsDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.packagesBindingSource)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.packagesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.travelExpertsDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.packagesBindingNavigator)).EndInit();
             this.packagesBindingNavigator.ResumeLayout(false);
             this.packagesBindingNavigator.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsBindingNavigator)).EndInit();
+            this.productsBindingNavigator.ResumeLayout(false);
+            this.productsBindingNavigator.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -572,6 +703,18 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton packagesBindingNavigatorSaveItem;
         private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.BindingSource productsBindingSource;
+        private TravelExpertsDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
+        private System.Windows.Forms.BindingNavigator productsBindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem1;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem1;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator3;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem1;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator4;
+        private System.Windows.Forms.DataGridView productsDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }
 }
 

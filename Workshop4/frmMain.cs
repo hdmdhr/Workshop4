@@ -29,6 +29,8 @@ namespace Workshop4
         {
             // TODO: This line of code loads data into the 'travelExpertsDataSet.Products' table. You can move, or remove it, as needed.
             this.productsTableAdapter.Fill(this.travelExpertsDataSet.Products);
+            // TODO: This line of code loads data into the 'travelExpertsDataSet.Products' table. You can move, or remove it, as needed.
+            this.productsTableAdapter.Fill(this.travelExpertsDataSet.Products);
             this.packagesTableAdapter.Fill(this.travelExpertsDataSet.Packages);
 
         }
