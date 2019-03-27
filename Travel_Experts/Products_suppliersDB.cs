@@ -55,7 +55,7 @@ namespace Travel_Experts
             int prodSupId = 0;
 
             SqlConnection con = TravelExpertsDB.GetConnection();
-            string insertStatement = "INSERT INTO ProductsSuppliers (ProductId, SupplierId) " +
+            string insertStatement = "INSERT INTO Products_Suppliers (ProductId, SupplierId) " +
                                        "VALUES(@ProductId, @SupplierId)";
             SqlCommand cmd = new SqlCommand(insertStatement, con);
             if (prod_sup.ProductId == null)
@@ -72,7 +72,7 @@ namespace Travel_Experts
             {
                 con.Open();
                 cmd.ExecuteNonQuery();
-                string selectQuery = "SELECT IDENT_CURRENT('ProductsSuppliers') FROM ProductsSuppliers"; // Identity value
+                string selectQuery = "SELECT IDENT_CURRENT('Products_Suppliers') FROM Products_Suppliers"; // Identity value
                 SqlCommand selectCommand = new SqlCommand(selectQuery, con);
                 prodSupId = Convert.ToInt32(selectCommand.ExecuteScalar()); // single value
             }
@@ -90,7 +90,7 @@ namespace Travel_Experts
         public static int UpdateProductSupplier(Products_suppliers oldProdSupplier, Products_suppliers newProdSupplier)
         {
             int count = 0;
-            string updateStatement = "UPDATE ProductsSuppliers SET " +
+            string updateStatement = "UPDATE Products_Suppliers SET " +
                                      "ProductId = @ProductId, " +
                                      "SupplierId = @SupplierId " +
                                      "WHERE ProductSupplierId = @ProductSupplierId " +
