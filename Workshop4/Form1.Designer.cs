@@ -461,9 +461,6 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "ProdName";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataSource = typeof(Travel_Experts.Product);
             // 
             // btnUpdate
             // 
@@ -588,9 +585,6 @@
             this.productListBox.TabIndex = 14;
             this.productListBox.ValueMember = "ProdName";
             // 
-            // productBindingSource1
-            // 
-            this.productBindingSource1.DataSource = typeof(Travel_Experts.Product);
             // 
             // packageIdComboBox1
             // 
