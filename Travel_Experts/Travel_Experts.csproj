@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Package.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Packages_products_suppliers.cs" />
     <Compile Include="Packages_products_suppliersDB.cs" />
     <Compile Include="Products.cs" />
@@ -54,6 +55,9 @@
     <Compile Include="Product.cs" />
     <Compile Include="ProductDB.cs" />
 >>>>>>> parent of 1b29a45... remove product.cs
+=======
+    <Compile Include="PackageDB.cs" />
+>>>>>>> parent of ffa5f29... Revert "Merge branch 'louisee'"
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Suppliers.cs" />
     <Compile Include="SuppliersDB.cs" />
