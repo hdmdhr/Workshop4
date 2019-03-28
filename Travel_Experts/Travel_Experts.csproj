@@ -41,12 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Package.cs" />
-    <Compile Include="PackageDB.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="ProductDB.cs" />
+    <Compile Include="Business Classes\Package.cs" />
+    <Compile Include="Data Access Classes\PackageDB.cs" />
+    <Compile Include="Business Classes\Product.cs" />
+    <Compile Include="Data Access Classes\ProductDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TravelExpertsDB.cs" />
+    <Compile Include="Data Access Classes\TravelExpertsDB.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
