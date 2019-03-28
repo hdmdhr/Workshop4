@@ -13,6 +13,5 @@ namespace Travel_Experts
         {
             return new SqlConnection(@"Data Source=localhost\sqlexpress;Initial Catalog=TravelExperts;Integrated Security=True");
         }
-       
     }
 }
