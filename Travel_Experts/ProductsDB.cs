@@ -100,5 +100,51 @@ namespace Travel_Experts
             }
             return count;
         }
+
+        /**
+         * Author: : Louise Acosta
+         * Date: March 27, 2019
+         **/
+
+        public static List<Products> GetProductsFromPackage(int packageID)
+        {
+            List<Products> products = new List<Products>();
+            Products product=null;
+            // create connection
+            SqlConnection connection = TravelExpertsDB.GetConnection();
+
+
+            string selectQuery = "SELECT ProdName " +
+                                 "FROM Products p, Products_Suppliers s, Packages_Products_Suppliers r " +
+                                 "WHERE p.ProductId=s.ProductId and s.ProductSupplierId=r.ProductSupplierId and PackageId=@PackageId";
+
+            SqlCommand cmd = new SqlCommand(selectQuery, connection);
+            cmd.Parameters.AddWithValue("@PackageID", packageID);
+
+            // check
+            try
+            {
+                // open the connection
+                connection.Open();
+
+                // execute the SELECT query
+                SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.SingleRow); // SingleRow indicates only 1 row will return, helps to optimize execution
+                while (dr.Read()) // we have a customer
+                {
+                    // create new object
+                    product = new Products();
+                    product.ProductId = (int)dr["ProductId"];
+                    product.ProdName = dr["ProdName"].ToString();
+     
+                }
+                dr.Close();
+
+                return products;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
